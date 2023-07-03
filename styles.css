@@ -49,7 +49,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 10px; /* Adjusted margin */
 }
 
 /* Hero section */
@@ -62,15 +62,27 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative; /* Added position */
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px); /* Added backdrop-filter */
 }
 
 .hero-content {
   text-align: center;
+  position: relative; /* Added position */
+  z-index: 1; /* Added z-index */
 }
 
-.hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.hero-content img {
+  width: 25%; /* Adjusted width */
 }
 
 .hero-content p {
