@@ -53,10 +53,19 @@ nav ul li {
 }
 
 /* Hero section */
+#home {
+  background-image: url("https://github.com/SegBin-ai/website/blob/24d081dc860700fdeb845f3c091d15e0960362f6/Images/website/main-page/terravortex.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-content {
   text-align: center;
-  padding: 200px 0;
-  background-color: #f1f1f1;
 }
 
 .hero-content h1 {
