@@ -1,69 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TerraVortex - Sustainable Tech Solutions</title>
+  <title>TerraVortex - Automatic Waste Sorting Dustbins</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .logo {
+      width: 220px; /* Adjust the width as per your preference */
+      position: absolute;
+      top: 20px; /* Adjust the top position as per your preference */
+      left: 20px; /* Adjust the left position as per your preference */
+    }
+    .navbar {
+      background-color: black;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <script src="hello.js"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/website/main-page/logo.png" alt="TerraVortex Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#signup">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home">
-    <div class="hero-content">
-      <img src="https://raw.githubusercontent.com/SegBin-ai/website/main/Images/website/main-page/logo.png" alt="TerraVortex Logo"> <!-- Replace 'logo.png' with the path to your logo file -->
-      <p>Sustainable Tech Solutions</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about">
+  <section id="about" class="py-5" style="background-color: #B7410E">
     <div class="container">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris mauris, ultrices non ullamcorper at, vestibulum ac risus.</p>
-      <p>Phasellus dapibus neque eu odio tincidunt, non aliquam ipsum vestibulum. Sed vestibulum, neque id vestibulum tempus, est ante efficitur mauris.</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="display-4" style="font-family: 'Tenor Sans', sans-serif;">Redefining Waste Management</h3>
+        </div>
+        <div class="col-lg-6">
+          <p id="sorting" style="font-family: 'Tenor Sans', sans-serif;">Welcome to TerraVortex, where we're crafting the future of waste management with our revolutionary, automated dustbins. Get ready to experience an unprecedented level of order and efficiency in the way you dispose of your trash!</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
+  <section id="about" class="py-5" style="background-color: #B7410E">
     <div class="container">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Sustainable Energy Solutions</li>
-        <li>Green Data Centers</li>
-        <li>Renewable Resource Management</li>
-        <li>Eco-friendly Software Development</li>
-      </ul>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="Images/trash.png" alt="About TerraVortex" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-lg-6">
+          <h3 class="display-4" style="font-family: 'Tenor Sans', sans-serif;">Smart Dustbins That Sort Your Waste For You</h3>
+          <p id="sorting" style="font-family: 'Tenor Sans', sans-serif;">Our dustbins employ state-of-the-art technology to automatically categorize and separate waste items, making the recycling process faster and more efficient.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <section id="about" class="py-5" style="background-color: #B7410E">
     <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="display-4" style="font-family: 'Tenor Sans', sans-serif;">Join The Launch and Standout Among The Crowd</h3>
+          <p id="sorting" style="font-family: 'Tenor Sans', sans-serif;">Be the first to join our amazing journey of creating a cleaner future by signing up for our launch notifications!</p>
+          <a href="#signup" class="btn btn-lg" style="background-color: #FF595E;"><strong style="color: white; font-family: 'Tenor Sans', sans-serif;">Sign Up Now</strong></a>
+        </div>
+        <div class="col-lg-6">
+          <img src="Images/trash-2.png" alt="About TerraVortex" class="img-fluid rounded-circle">
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 TerraVortex. All rights reserved. | Website by YourCompany</p>
+  <section id="features" class="py-5" style="background-color: #B7410E">
+    <div class="container">
+      <h2 class="text-center mb-4" style="font-family: 'Tenor Sans', sans-serif;">Key Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-item text-center">
+            <img src="Images/feature-1.png" alt="Feature 1" class="img-fluid rounded-circle" style="width: 300px; height: 250px">
+            <h4 style="font-family: 'Tenor Sans', sans-serif; margin-top: 30px;">Automatic Sorting</h4>
+            <p style="font-family: 'Tenor Sans', sans-serif;">Our dustbins automatically sort different types of waste, making recycling easier and more efficient.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item text-center">
+            <img src="Images/feature-2.png" alt="Feature 2" class="img-fluid rounded-circle" style="width: 300px; height: 250px">
+            <h4 style="font-family: 'Tenor Sans', sans-serif; margin-top: 30px;">Sleek Design</h4>
+            <p style="font-family: 'Tenor Sans', sans-serif;">With a modern and sleek design, our dustbins seamlessly blend into any environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item text-center">
+            <img src="Images/feature-3.png" alt="Feature 3" class="img-fluid rounded-circle" style="width: 300px; height: 250px">
+            <h4 style="font-family: 'Tenor Sans', sans-serif; margin-top: 30px;">Intuitive Interface</h4>
+            <p style="font-family: 'Tenor Sans', sans-serif;">The intuitive interface allows for easy usage and monitoring of the dustbins' sorting process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup" class="py-5" style="background-color: #B7410E">
+    <div class="container">
+      <h2 class="text-center mb-4" style="font-family: 'Tenor Sans', sans-serif;">Sign Up Now</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div style="background-color: #B7410E">
+            <div class="card-body">
+              <form>
+                <div class="formI apologize for the incomplete response. Here's the remaining part of the modified code:
+
+```html
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-block" style="background-color: #FF595E;"><strong style="font-family: 'Tenor Sans', sans-serif; color:white;">Get Started</strong></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5" style="background-color: #B7410E">
+    <div class="container">
+      <h2 class="text-center mb-4" style="font-family: 'Tenor Sans', sans-serif;">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong style="font-family: 'Tenor Sans', sans-serif;">Have any questions or inquiries? Feel free to reach out to us.</strong></p>
+          <ul>
+            <li><strong>Email:</strong> info@terravortex.com</li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-block" style="background-color: #FF595E;"><strong style="font-family: 'Tenor Sans', sans-serif; color:white;">Get Started</strong></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>2023 TerraVortex. All rights reserved</p>
   </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
