@@ -3,7 +3,8 @@ window.marker = null;
 function initialize() {
   var map;
 
-  var nottingham = new google.maps.LatLng(40.1164, 88.2434);
+  var nottingham = new google.maps.LatLng(40.116420, -88.243383);
+
 
   var style = [{
     "featureType": "road.highway",
