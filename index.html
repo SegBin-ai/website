@@ -41,15 +41,19 @@
 
 </head>
 <body id="top-header">
+  <style>
+    .body{
+    background-color: #000000;
+  }
+  </style>
+  
 <!-- LOADER TEMPLATE -->
 <div id="page-loader">
   <div class="loader-icon fa fa-spin colored-border"></div>
 </div>
 <!-- /LOADER TEMPLATE -->
 
-<div id="video-container">
-  <iframe id="video" src="https://www.youtube.com/embed/2AtmkfMKdVI?rel=0&version=3&autoplay=1&controls=0&showinfo=0&loop=1" frameborder="0" allowfullscreen></iframe>
-</div>
+
 
 <!-- NAVBAR
     ================================================= -->
@@ -111,7 +115,22 @@
       </div> <!-- / .container -->
     </nav>
     
-
+    <div id="video-container">
+      <iframe id="video" src="https://www.youtube.com/embed/2AtmkfMKdVI?rel=0&version=3&autoplay=1&controls=0&showinfo=0&loop=1" frameborder="0" allowfullscreen></iframe>
+      <style>
+      #video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        margin-top: 90px;
+      }
+      #video {
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100vh;
+      }
+      </style>
+    </div>
 <!-- Purchasing now button and background -->
 <section class="banner-area py-5" id="banner-3">
     <div class="overlay"></div>
