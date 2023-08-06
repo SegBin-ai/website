@@ -47,7 +47,9 @@
 </div>
 <!-- /LOADER TEMPLATE -->
 
-
+<div id="video-container">
+  <iframe id="video" src="https://www.youtube.com/embed/2AtmkfMKdVI?rel=0&version=3&autoplay=1&controls=0&showinfo=0&loop=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <!-- NAVBAR
     ================================================= -->
@@ -109,8 +111,6 @@
       </div> <!-- / .container -->
     </nav>
     
-    
-
 
 <!-- Purchasing now button and background -->
 <section class="banner-area py-5" id="banner-3">
@@ -519,26 +519,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
   <script src="plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
-  <script>
-    const video = document.getElementById('fullscreen-video');
-    const videoSection = document.querySelector('.video-section');
-  
-    // Function to pause the video when it's out of the viewport
-    function pauseVideoOnScroll() {
-      const rect = videoSection.getBoundingClientRect();
-      if (rect.bottom < 0 || rect.top > window.innerHeight) {
-        video.pause();
-      } else {
-        video.play();
-      }
-    }
-  
-    // Call the function on scroll and page load
-    window.addEventListener('scroll', pauseVideoOnScroll);
-    window.addEventListener('load', pauseVideoOnScroll);
-  </script>
-  
+  <script src="js/script.js"></script>  
 </body>
 
 </html>
