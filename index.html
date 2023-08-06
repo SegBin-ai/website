@@ -115,7 +115,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center align-items-center">
-        <video id="fullscreen-video" autoplay loop poster="images/favicon.png">
+        <video id="fullscreen-video" loop poster="images/favicon.png">
           <source src="Company Intro Teaser - HD 1080p.mov" type="video/quicktime">
           Your browser does not support the video tag.
         </video>
@@ -532,26 +532,26 @@
   <script src="plugins/google-map/gmap.js"></script>
 
   <script src="js/script.js"></script>
-
-</body>
-<script>
-  const video = document.getElementById('fullscreen-video');
-  const videoSection = document.querySelector('.video-section');
-
-  // Function to pause the video when it's out of the viewport
-  function pauseVideoOnScroll() {
-    const rect = videoSection.getBoundingClientRect();
-    if (rect.bottom < 0 || rect.top > window.innerHeight) {
-      video.pause();
-    } else {
-      video.play();
+  <script>
+    const video = document.getElementById('fullscreen-video');
+    const videoSection = document.querySelector('.video-section');
+  
+    // Function to pause the video when it's out of the viewport
+    function pauseVideoOnScroll() {
+      const rect = videoSection.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) {
+        video.pause();
+      } else {
+        video.play();
+      }
     }
-  }
-
-  // Call the function on scroll and page load
-  window.addEventListener('scroll', pauseVideoOnScroll);
-  window.addEventListener('load', pauseVideoOnScroll);
-</script>
+  
+    // Call the function on scroll and page load
+    window.addEventListener('scroll', pauseVideoOnScroll);
+    window.addEventListener('load', pauseVideoOnScroll);
+  </script>
+  
+</body>
 
 </html>
    
