@@ -110,10 +110,21 @@
     </nav>
     
     
-    
+<!-- Video Section -->
+<section class="video-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center align-items-center">
+        <video id="fullscreen-video" autoplay loop poster="images/favicon.png">
+          <source src="Company Intro Teaser - HD 1080p.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section> 
 
 <!-- Purchasing now button and background -->
-
 <section class="banner-area py-5" id="banner-3">
     <div class="overlay"></div>
     <!-- Content -->
@@ -149,7 +160,8 @@
     }
   </style>
   
-  
+
+
 
   <section id="about" class="section">
     <div class="container">
@@ -522,5 +534,24 @@
   <script src="js/script.js"></script>
 
 </body>
+<script>
+  const video = document.getElementById('fullscreen-video');
+  const videoSection = document.querySelector('.video-section');
+
+  // Function to pause the video when it's out of the viewport
+  function pauseVideoOnScroll() {
+    const rect = videoSection.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+      video.pause();
+    } else {
+      video.play();
+    }
+  }
+
+  // Call the function on scroll and page load
+  window.addEventListener('scroll', pauseVideoOnScroll);
+  window.addEventListener('load', pauseVideoOnScroll);
+</script>
+
 </html>
    

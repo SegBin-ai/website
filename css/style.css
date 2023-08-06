@@ -119,6 +119,25 @@ h6 {
   background: #F4F7FC;
 }
 
+/* Make the video section fill the entire viewport height */
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Make the video element fill the width of the screen */
+#fullscreen-video {
+  width: 100vw;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio while covering full width */
+}
+
+
+
+
 /*--------------------
 Common Styles
 -----------------*/
