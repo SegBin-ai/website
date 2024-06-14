@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <footer className="bg-gray-800 text-white">
             <div className="container mx-auto py-12 px-4">
@@ -19,9 +20,9 @@ const Footer = () => {
                     <div className="w-full md:w-1/4 mb-6 md:mb-0">
                         <h3 className="text-xl font-bold mb-4">Useful Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="/offer" className="text-gray-400 hover:text-white transition-colors">Products</a></li>
-                            <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                            <li><a onClick={() => navigate("/about")} className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a onClick={() => navigate("/offer")} className="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                            <li><a onClick={() => navigate("/contact")} className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                         </ul>
                     </div>
 
@@ -30,8 +31,8 @@ const Footer = () => {
                         <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                         <ul className="space-y-2">
                             <li><span className="text-gray-400">Champaign, Illinois, USA</span></li>
-                            <li><a href="tel:+1 (563)-223 7343" className="text-gray-400 hover:text-white transition-colors">+1 (563)-223 7343</a></li>
-                            <li><a href="mailto:segbinai@gmail.com" className="text-gray-400 hover:text-white transition-colors">segbinai@gmail.com</a></li>
+                            <li><a className="text-gray-400 hover:text-white transition-colors">+1 (563)-223 7343</a></li>
+                            <li><a className="text-gray-400 hover:text-white transition-colors">segbinai@gmail.com</a></li>
                         </ul>
                     </div>
 
